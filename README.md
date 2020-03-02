@@ -12,3 +12,13 @@ simply click `Use this template` and your'e good !
 - `mocha`
 - `chai`
 - `github actions` for `lint` and `test`
+
+# after 
+once you created a repository using this template, use the following steps:  
+  * update and rename `package.json`
+  * add `"bin"` section to `package.json`:
+  ```json
+  "bin": {
+      name_of_cli: "./index.js"
+  }
+  ```
