@@ -1,0 +1,2 @@
+# clider
+cli template
