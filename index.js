@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const yargs = require('yargs');
+const some_command = require('./commands/some_command');
 
 yargs
     .config(
@@ -9,13 +10,13 @@ yargs
             // will be available on argv
         })
     .command(
-        ['some_command <name>', 'l'],
+        ['some_command', 'l'],
         'some_command description',
-        { op: { alias: 'o', type: 'boolean', desc: 'option #1' } },
+        { },
         async argv => {
-            console.log(argv, 'some_command_to_execute');
+            some_command(argv);
         })
-    .example('$0 some_command', 'get pods list in env')
+    .example('$0 some_command --some_option', 'example command')
     .option('some_option', { alias: 's', type: 'boolean', default: false, desc: 'some option', required: true })
     .demandCommand(1, '')
     .help()
