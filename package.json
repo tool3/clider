@@ -27,7 +27,7 @@
     "yargs": "^16.2.0"
   },
   "devDependencies": {
-    "chai": "^4.3.0",
+    "chai": "^4.3.3",
     "eslint": "^7.20.0",
     "husky": "^5.0.9",
     "mocha": "^8.3.0"
