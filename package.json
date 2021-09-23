@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/tool3/clider#readme",
   "dependencies": {
-    "yargs": "^17.1.1"
+    "yargs": "^17.2.0"
   },
   "devDependencies": {
     "chai": "^4.3.2",
